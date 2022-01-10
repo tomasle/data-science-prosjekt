@@ -23,7 +23,7 @@ A template for data science projects based on Cookiecutter Data Science https://
   git merge main
   ```
 - Push your local branch to the remote
-  `git push` (`git push -u origin branch_name`)
+  `git push` (`git push -u origin branch_name` if pushing a new branch)
 - Create a PR on Github
 - Request a code review from one of your teammates
 - Merge PR into main after approval
