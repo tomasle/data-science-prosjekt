@@ -1,0 +1,49 @@
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+
+      - uses: actions/checkout@v2
+      
+      - name: Set up build folder
+        run: mkdir -p build && ls -a
+        
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+
+        # SVV TODO: Add our script here
+      - name: Install some libs
+        run: pip install jupyter
+      - name: Generate some data for the site
+        run: bash website/compile_index.sh notebooks website/template.md .
+
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: >-  # allows you to break string into multiple lines
+            --standalone
+            --metadata title="my site"
+            --output=index.html
+            index.md
+
+      - name: compile about.md
+        uses: docker://pandoc/core:2.9
+        with:
+          args: >-  # allows you to break string into multiple lines
+            --standalone
+            --metadata title="my site"
+            --output=about.html
+            website/about.md
+
+
+      - name: move the compiled document
+        run: ls -R -la && mv *.html build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.7
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
