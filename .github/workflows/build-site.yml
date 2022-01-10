@@ -26,6 +26,7 @@ jobs:
           args: >-  # allows you to break string into multiple lines
             --standalone
             --metadata title="my site"
+            --variable=title=""
             --output=index.html
             index.md
 
@@ -35,6 +36,7 @@ jobs:
           args: >-  # allows you to break string into multiple lines
             --standalone
             --metadata title="my site"
+            --variable=title=""
             --output=about.html
             website/about.md
 
