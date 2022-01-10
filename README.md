@@ -50,7 +50,12 @@ Find more commands in the [conda cheat sheet](https://docs.conda.io/projects/con
 
 To create a simple website to feature your work follow the instructions:
 1. Enable GitHub Pages on your repo
-2. Alter the code and templates in the "website/" folder to fit your project 
+2. Alter the code and templates in the "website/" folder to fit your project
+
+### Challenge
+1. Save one image of a plot from your notebook, which you feel like displaying (hint: plt.savefig('present_notebook1.png'))
+2. Instead of linking to your notebook using a hyperlink, use a clickable image of the saved plot to navigate to your notebook. You may write some html here -> generate img and a tags in the compilation script in the website/
+3. OPTIONAL: Make your website look more presentable with some more html and css
 
 ## References
 - vegdata api
