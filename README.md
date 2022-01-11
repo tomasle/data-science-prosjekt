@@ -68,3 +68,24 @@ To create a simple website to feature your work follow the instructions:
   * Python-API-interface package https://github.com/alexdiem/nvdbapi-V3
 - Trafikkdata api : https://www.vegvesen.no/trafikkdata/
 - Conda docs https://docs.conda.io/projects/conda/en/latest/index.html#
+
+## Koble til GIT på en god måte (SSH)
+
+- Start med å lage en SSH nøkkel kommandoer kjøres i terminalen
+``
+ssh-keygen -t ed25519
+`` 
+- Neste steg er å kopiere den åpne nøkkelen til GITHub, teksten som kommer ut under skal legges inn i GITHub under settings på din profil og SSH keys.
+
+``
+cat ~/.ssh/id_ed25519.pub
+``
+ 
+
+Så må git repository settes til å bruke SSH og ikke HTML. 
+
+``
+git remote set-url origin git@github.com:tomasle/data-science-prosjekt.git
+``
+
+Da skal alt fungere
