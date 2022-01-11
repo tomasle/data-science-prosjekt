@@ -65,5 +65,6 @@ To create a simple website to feature your work follow the instructions:
   * datakatalog : https://datakatalogen.vegdata.no/
   * api nettside : https://api.vegdata.no/
   * Boilerplate kode for å hente ut med python finner du i dette repo
+  * Python-API-interface package https://github.com/alexdiem/nvdbapi-V3
 - Trafikkdata api : https://www.vegvesen.no/trafikkdata/
 - Conda docs https://docs.conda.io/projects/conda/en/latest/index.html#
