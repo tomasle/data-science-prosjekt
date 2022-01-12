@@ -88,4 +88,4 @@ Så må git repository settes til å bruke SSH og ikke HTML.
 git remote set-url origin git@github.com:tomasle/data-science-prosjekt.git
 ``
 
-Da skal alt fungere.. håper vi
+Da skal alt fungere.. håper vi :)
