@@ -1,6 +1,6 @@
 ## Hello world
 
-I am Anders LH!
+We are Tomas, Vegard and Christian
 
 Content:
 
