@@ -31,6 +31,7 @@ rm $OUTPUT_PATH/*.html
 
 cd $JUPYTER_FOLDER
 wget "https://raw.githubusercontent.com/tomasle/data-science-prosjekt/main/notebooks/LesInnCSVtilPandas.tomlev.ipynb"
+wget "https://raw.githubusercontent.com/tomasle/data-science-prosjekt/main/notebooks/LesInnCSVtilPandas.chskje.ipynb"
 #wget "https://raw.githubusercontent.com/alexdiem/data-science-python/main/L1_intro_python_data_analysis.ipynb"
 #wget "https://raw.githubusercontent.com/alexdiem/data-science-python/main/L2_plotting.ipynb"
 #wget "https://raw.githubusercontent.com/alexdiem/data-science-python/main/L3_geopandas.ipynb"
