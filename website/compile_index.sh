@@ -47,7 +47,7 @@ echo -e "\n\n" >> index.md
 for notebook in $OUTPUT_PATH/*.html
 
 do
-  echo "[$notebook](https://tomasle.github.io/data-science-prosjekt/)" | tee -a index.md
+  echo "[$notebook](https://tomasle.github.io/data-science-prosjekt/$notebook)" | tee -a index.md
   echo -e "\n" >> index.md
 done
 
